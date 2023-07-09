@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Basic9 from "./pages/Basic9";
+import Antiknight from "./pages/Antiknight";
+import Diagonal from "./pages/Diagonal";
+import Nonconsecutive from "./pages/Nonconsecutive";
+import Antiking from "./pages/Antiking";
+import Scattered from "./pages/Scattered";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <Navbar />
+        <div>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/basic9" element={<Basic9 />} />
+            <Route exact path="/antiknight" element={<Antiknight />} />
+            <Route exact path="/antiking" element={<Antiking />} />
+            <Route exact path="/diagonal" element={<Diagonal />} />
+            <Route exact path="/scattered" element={<Scattered />} />
+            <Route exact path="/nonconsecutive" element={<Nonconsecutive />} />
+          </Routes>
+        </div>
+      </div>
+    </>
   );
 }
 

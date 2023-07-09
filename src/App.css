@@ -1,38 +1,137 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.redbackground{
+  background-color: red;
+}
+
+.cellInput{
+  color: black;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  text-align: center;
+  padding: 0px;
+  border: 1px solid black;
+}
+
+.cellInput4{
+  color: black;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  border: 1px solid black;
+}
+
+
+
+h3{
+  font-size:larger;
+  font-weight: bolder;
+}
+
+table{
+  border-collapse: collapse;
+  border: 3px solid darkblue;
+}
+
+input:focus {
+  caret-color: transparent;
+}
+
+.cellcolor1{
+  background-color: #F8FDCF;
+}
+
+.cellcolor2{
+  background-color: #DAF5FF;
+}
+
+td{
+  padding: 0px;
+}
+
+.buttonContainer{
+  margin-top: 10px;
+}
+
+.solveButton {
+  background: rgb(6,14,131);
+  background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+  padding:  12px 40px ;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 15px 10px;
+  font-weight: bold;
+  border: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.solveButton:hover {
+   background: rgb(0,3,255);
+   background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.resetButton {
+  /* Red Shade */
+  background: rgb(131, 6, 14);
+  background: linear-gradient(0deg, rgba(131, 6, 14, 1) 0%, rgba(180, 12, 25, 1) 100%);
+  /* Rest of the styles */
+  padding: 12px 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 0px 10px;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+.resetButton:hover {
+  /* Red Shade on hover */
+  background: rgb(255, 0, 3);
+  background: linear-gradient(0deg, rgba(255, 0, 3, 1) 0%, rgba(251, 2, 126, 1) 100%);
+}
+
+.checkButton {
+  /* Green Shade */
+  background: rgb(14, 131, 6);
+  background: linear-gradient(0deg, rgba(14, 131, 6, 1) 0%, rgba(25, 180, 12, 1) 100%);
+  /* Rest of the styles */
+  padding: 12px 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 0px 10px;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+.checkButton:hover {
+  /* Green Shade on hover */
+  background: rgb(3, 210, 0);
+  background: linear-gradient(0deg, rgba(3, 210, 0, 1) 0%, rgba(126, 210, 2, 1) 100%);
+}
+
+.bBorder{
+  border-bottom: 2px solid black;
+}
+
+.rBorder{
+  border-right: 2px solid black;
 }
