@@ -11,7 +11,7 @@ const navigation = [
   { name: "Anti-King Move", href: "/antiking", current: false },
   { name: "Anti-Knight Move", href: "/antiknight", current: false },
   { name: "Unique Diagonal", href: "/diagonal", current: false },
-  { name: "Scattered", href: "/scattered", current: false },
+  { name: "Disjoint Groups", href: "/scattered", current: false },
   { name: "Non-Consecutive", href: "/nonconsecutive", current: false },
 ];
 

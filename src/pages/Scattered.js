@@ -219,7 +219,7 @@ function Scattered() {
   return (
     <div className="App">
       <div className="App-header">
-        <h3>Scattered Sudoku Puzzle</h3>
+        <h3>Disjoint Groups Sudoku Puzzle</h3>
         <div className=" flex">
           <table>
             <tbody>

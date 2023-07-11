@@ -40,7 +40,7 @@ function Home() {
       current: false,
     },
     {
-      title: "Scattered Sudoku",
+      title: "Disjoint Groups Sudoku",
       excerpt:
         "Basic Sudoku Rules apply. Additionally, cells with the same position in 3x3 boxes contain a number from 1 to 9 i.e no number can repeat in the same position in 3x3 boxes.",
       img1: "Scatteredincorrect.png",
